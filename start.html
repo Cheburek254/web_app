@@ -7,14 +7,14 @@
     <title>Викторина</title>
 </head>
 <body>
-<h2>Выберите викторину:</h2>
+<h2 class = title>Выберите викторину:</h2>
     <form method="post" action="/">
         <select name="quiz">
             {% for id, name in q_list %}
                 <option value="{{id}}">{{name}}</option>
             {% endfor %}    
         </select>
-        <p><input type="submit" value="Выбрать"> </p>
+        <p><input type="submit" value="Выбрать" class = button> </p>
     </form>
 </body>
 </html>
