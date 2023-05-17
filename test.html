@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Викторина</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style_quiz.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   {% if question %}
-    <h1 class = title>{{question}}</h1>
+    <h1>{{question}}</h1>
   {% endif %}
   <form method="post" action="test">
     <input type="hidden" name="q_id" value="{{quest_id}}">
@@ -19,7 +19,7 @@
       {% endfor %}
       <div class="inner-div">
         <p>
-          <input class=button type="submit" value="Ответить" >
+          <input class="btn" type="submit" value="Ответить">
         </p>
       </div>
     </div>
